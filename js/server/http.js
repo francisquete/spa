@@ -12,7 +12,7 @@ var operadoras = [{
         nome: 'tim',
         codigo: 41,
         categoria: 'celular',
-        preco: 0.99
+        preco: 0.75
     },
     {
         nome: 'vivo',

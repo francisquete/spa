@@ -11,8 +11,3 @@ angular.module("listaTelefonica").factory("contatosAPI", function($http, config)
         getContatos: _getContatos,
         saveContato: _saveContato
     };
-<<<<<<< HEAD
-});
-=======
-});
->>>>>>> 47ae46d87ca913c22afe31c1b8b2816523ba3f87

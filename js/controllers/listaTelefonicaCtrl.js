@@ -42,8 +42,3 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($s
 
     carregarContatos();
     carregarOperadoras();
-<<<<<<< HEAD
-});
-=======
-});
->>>>>>> 47ae46d87ca913c22afe31c1b8b2816523ba3f87

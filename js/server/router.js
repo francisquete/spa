@@ -1,6 +1,5 @@
 var http = require('http');
 
-<<<<<<< HEAD
 var createRouter = function (port) {
     var api = {};
     var routes = {};
@@ -10,8 +9,7 @@ var createRouter = function (port) {
     methods.forEach(function (method) {
         routes[method] = {};
         api[method.toLowerCase()] = function (path, fn) {
-=======
-var createRouter = function(port){
+    var createRouter = function(port){
     var api = {};
     var routes = {};
     var methods = ['GET','POST'];
@@ -19,12 +17,10 @@ var createRouter = function(port){
     methods.forEach(function (method){
         routes[method] = {};
         api[method.toLocaleLowerCase()] = function(path, fn){
->>>>>>> 47ae46d87ca913c22afe31c1b8b2816523ba3f87
             routes[method][path] = fn;
         };
     });
 
-<<<<<<< HEAD
     api.interceptor = function (interceptor) {
         interceptors.push(interceptor);
     };
@@ -60,14 +56,12 @@ var createRouter = function(port){
         });
     }).listen(port);
 
-=======
     http.createServer(function (req, res) {
         res.setHeader('Access-Control-Allow-Origin', '*');
         if (!routes[req.method][req.url]) return res.end();
         routes[req.method][req.url](req, res);
     }).listen(port);
     
->>>>>>> 47ae46d87ca913c22afe31c1b8b2816523ba3f87
     return api;
 };
 

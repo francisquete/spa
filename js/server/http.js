@@ -12,7 +12,11 @@ var operadoras = [{
         nome: 'tim',
         codigo: 41,
         categoria: 'celular',
+<<<<<<< HEAD
         preco: 0.75
+=======
+        preco: 0.99
+>>>>>>> 47ae46d87ca913c22afe31c1b8b2816523ba3f87
     },
     {
         nome: 'vivo',
@@ -102,4 +106,8 @@ app.options('/file', function (req, res) {
 
 app.options('/contatos', function (req, res) {
     res.end();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 47ae46d87ca913c22afe31c1b8b2816523ba3f87
